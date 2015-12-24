@@ -21,3 +21,6 @@ Cloud scalable URL shortening Web App consists of Link Redirect Server, Trend Se
 * Link Redirect Servers: Web servers that received requests with short URLs and replied with a redirect to the expanded URL
  
 ![alt text](static/images/urlcapture.PNG "Architecture")
+
+# Appendix
+Thanks to [The Practice of Cloud System Administration: Designing and Operating Large Distributed Systems](https://www.safaribooksonline.com/library/view/the-practice-of/9780133478549/)
