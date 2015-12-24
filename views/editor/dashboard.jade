@@ -1,0 +1,31 @@
+extends ../layout.jade
+block main
+	div.editor
+		block content
+			div.center
+				form(action="/editor/newworkspace", method="POST")
+					ul.noul
+						li
+							h3.divider Workspace Dashboard
+							.ui.cards
+								each val,index in urls
+									.card
+										.content
+											.header(name="wsname" value=val.urlname) #{val.urlname}
+											.description
+											|	#{val.shorturl}
+										.extra.content
+												.ui.two.buttons
+													button(class="ui basic green button" type="submit" name="butt" value=("1+"+val.ID)) Statistics
+													button(class="ui basic red button" type="submit" name="butt" value=("2+"+val.ID)) Delete
+								.card
+										.content
+											.header 
+												input.input-block-level(name="urlname", placeholder="URL Name" style="width:250px;") 
+											.description
+												input.input-block-level(name="bigurl", placeholder="URL")
+										.ui.one.buttons
+												button(class="ui basic green button" type="submit" name="butt" value="create") +	
+
+block post_wrap
+	
