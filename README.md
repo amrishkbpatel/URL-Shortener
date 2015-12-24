@@ -20,3 +20,4 @@ Cloud scalable URL shortening Web App consists of Link Redirect Server, Trend Se
 * Trend Server: A server that kept track of “trending links” statistics.
 * Link Redirect Servers: Web servers that received requests with short URLs and replied with a redirect to the expanded URL
  
+![alt text](static/images/urlcapture.PNG "Architecture")
